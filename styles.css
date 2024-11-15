@@ -1,107 +1,108 @@
+/* styles.css */
+
 /* Global Styles */
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: white;
-    color: black;
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
     line-height: 1.6;
-    text-align: center;
 }
 
 /* Header */
 header {
-    padding: 20px;
-    border-bottom: 2px solid #ddd;
+    background-color: #4285f4;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
 }
 
 header h1 {
     font-size: 2.5rem;
-    margin-bottom: 10px;
+    margin: 0;
 }
 
 header p {
     font-size: 1rem;
-    color: gray;
+    margin-top: 10px;
 }
 
 /* Sections */
 section {
     margin: 20px auto;
     padding: 20px;
-    max-width: 800px;
+    max-width: 900px;
+    text-align: center;
 }
 
-.info-section h1, .games-section h1 {
-    font-size: 2rem;
+.info-section h1,
+.games-section h1 {
+    font-size: 1.8rem;
+    color: #333;
     margin-bottom: 10px;
 }
 
 .info-section h2 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #555;
+    margin-bottom: 15px;
 }
 
 .key-combo {
     font-weight: bold;
     color: #222;
-    text-transform: uppercase;
-}
-
-/* Buttons and Links */
-a {
-    text-decoration: none;
-    color: #007BFF;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-.btn {
-    display: inline-block;
-    margin: 15px 0;
-    padding: 10px 15px;
-    background-color: #007BFF;
-    color: white;
+    background-color: #e8f0fe;
+    padding: 5px 8px;
     border-radius: 4px;
-    transition: background-color 0.3s ease;
 }
 
-.btn:hover {
-    background-color: #0056b3;
+/* Game Cards */
+.games-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
-/* Games List */
-.games-section ul {
-    list-style: none;
-    padding: 0;
+.game-card {
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 200px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.games-section li {
-    margin: 10px 0;
+.game-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.game-link {
-    color: #007BFF;
+.game-card a {
+    text-decoration: none;
+    color: #4285f4;
     font-weight: bold;
+    font-size: 1.1rem;
 }
 
-.game-link:hover {
+.game-card a:hover {
     text-decoration: underline;
 }
 
 /* Footer */
 footer {
-    padding: 10px;
-    border-top: 2px solid #ddd;
+    text-align: center;
+    padding: 10px 0;
     margin-top: 20px;
+    background-color: #f1f1f1;
+    border-top: 1px solid #ddd;
 }
 
 footer img {
-    display: block;
+    display: inline-block;
     margin: 0 auto;
-    max-width: 100%;
 }
 
 /* Utility Classes */
