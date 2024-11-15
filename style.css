@@ -1,1 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base Styles */
+@layer base {
+  body {
+    @apply bg-gray-950 text-gray-100 font-inter antialiased;
+  }
+
+  ::selection {
+    @apply bg-gray-800 text-white;
+  }
+
+  h1, h2 {
+    @apply text-center font-bold text-gray-100;
+  }
+
+  a {
+    @apply text-blue-400 hover:underline transition-colors duration-300;
+  }
+
+  hr {
+    @apply my-6 border-gray-800;
+  }
+}
+
+/* Components */
+@layer components {
+  .btn {
+    @apply px-6 py-3 rounded-lg bg-gray-900 text-white 
+           transition-all duration-300 ease-out
+           hover:bg-gray-800 active:scale-[0.98]
+           disabled:opacity-50 disabled:pointer-events-none
+           focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-700;
+  }
+
+  .btn-secondary {
+    @apply bg-gray-800 hover:bg-gray-700;
+  }
+
+  .card {
+    @apply bg-gray-900/90 backdrop-blur-sm border border-gray-800/50 rounded-lg
+           shadow-lg shadow-black/5 p-4 text-gray-100;
+  }
+
+  .hover-lift {
+    @apply transition-transform duration-300 ease-out
+           hover:-translate-y-1 active:translate-y-0;
+  }
+
+  .page-transition {
+    @apply animate-fadeIn;
+  }
+}
+
+/* Utilities */
+@layer utilities {
+  .animate-fadeIn {
+    animation: fadeIn 0.5s ease-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1f1f1f;
+  border-radius: 9999px;
+  border: 2px solid #0a0a0a;
+  transition: background-color 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2e2e2e;
+}
+
+/* Smooth Scroll Behavior */
+html {
+  scroll-behavior: smooth;
+}
