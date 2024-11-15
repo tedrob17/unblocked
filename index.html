@@ -8,13 +8,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <iframe 
-        src="https://tedrob17.betteruptime.com/badge?theme=light" 
-        width="250" 
-        height="30" 
-        frameborder="0" 
-        scrolling="no">
-    </iframe>
+    <!-- Uptime Badge -->
+    <div class="uptime-badge">
+        <iframe 
+            src="https://tedrob17.betteruptime.com/badge?theme=light" 
+            width="250" 
+            height="30" 
+            frameborder="0" 
+            scrolling="no">
+        </iframe>
+    </div>
     <script 
         src="https://uptime.betterstack.com/widgets/announcement.js" 
         data-id="182486" 
@@ -22,31 +25,46 @@
         type="text/javascript">
     </script>
 
+    <!-- Header Section -->
+    <header>
+        <hr>
+        <h1>Welcome!</h1>
+        <p>You have discovered a super secret unblocked games website. Well done!</p>
+        <hr>
+    </header>
+
+    <!-- Info Section -->
+    <section class="info-section">
+        <h1>INFO</h1>
+        <h2>Press <span class="key-combo">CTRL + W</span> to close tabs in first-person games</h2>
+        <a href="./gameleaderboards" class="btn">Game Leaderboards</a>
+    </section>
+
     <hr>
 
-    <h1>Welcome! You have come across a super secret unblocked games website.</h1>
-    <p>Well done!</p>
+    <!-- Games Section -->
+    <section class="games-section">
+        <h1>Games</h1>
+        <ul>
+            <li><a href="./games/Wordle/" class="game-link">Wordle</a></li>
+            <li><a href="./games/2048/" class="game-link">2048</a></li>
+            <li><a href="./games/Superhot/" class="game-link">Superhot</a></li>
+            <li><a href="./games/CookieClicker/" class="game-link">Cookie Clicker</a></li>
+        </ul>
+    </section>
 
     <hr>
 
-    <h1>INFO</h1>
-    <h2>Press CTRL + W to close tabs in first-person games</h2>
-    <a href="./gameleaderboards">Game Leaderboards</a>
-
-    <hr>
-
-    <a href="./games/Wordle/">Wordle</a><br>
-    <a href="./games/2048/">2048</a><br>
-    <a href="./games/Superhot/">Superhot</a><br>
-    <a href="./games/CookieClicker/">Cookie Clicker</a><br><br>
-
-    <div align="center">
-        <a href="https://www.free-website-hit-counter.com">
-            <img 
-                src="https://www.free-website-hit-counter.com/zc.php?d=9&id=466&s=1" 
-                border="0" 
-                alt="Free Website Hit Counter">
-        </a>
-    </div>
+    <!-- Footer Section -->
+    <footer>
+        <div class="hit-counter">
+            <a href="https://www.free-website-hit-counter.com">
+                <img 
+                    src="https://www.free-website-hit-counter.com/zc.php?d=9&id=466&s=1" 
+                    border="0" 
+                    alt="Free Website Hit Counter">
+            </a>
+        </div>
+    </footer>
 </body>
 </html>
