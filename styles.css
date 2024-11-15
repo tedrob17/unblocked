@@ -1,133 +1,113 @@
-/* Google Font Import */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-
-/* Base Styles */
+/* Global Styles */
 body {
-    background-color: #0a0a0a; /* Dark theme background */
-    color: #f5f5f5; /* Light text color for contrast */
-    font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
     line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-h1, h2 {
     text-align: center;
-    font-weight: 600;
-    color: #ffffff;
-    margin-bottom: 1rem;
 }
 
-p {
-    text-align: center;
-    font-size: 1.1rem;
-    margin-bottom: 1.5rem;
+/* Header */
+header {
+    padding: 20px;
+    border-bottom: 2px solid #ddd;
 }
 
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1rem;
+    color: gray;
+}
+
+/* Sections */
+section {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+}
+
+.info-section h1, .games-section h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.info-section h2 {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.key-combo {
+    font-weight: bold;
+    color: #222;
+    text-transform: uppercase;
+}
+
+/* Buttons and Links */
 a {
-    color: #00aaff;
     text-decoration: none;
-    transition: color 0.3s ease;
+    color: #007BFF;
 }
 
 a:hover {
-    color: #0088cc;
     text-decoration: underline;
 }
 
+.btn {
+    display: inline-block;
+    margin: 15px 0;
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Games List */
+.games-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.games-section li {
+    margin: 10px 0;
+}
+
+.game-link {
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.game-link:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    padding: 10px;
+    border-top: 2px solid #ddd;
+    margin-top: 20px;
+}
+
+footer img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+/* Utility Classes */
 hr {
-    border: 0;
-    height: 1px;
-    background: #333333;
-    margin: 2rem 0;
-}
-
-/* Button Styles */
-button, a.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background: #1f1f1f;
-    color: #ffffff;
-    border-radius: 8px;
-    font-size: 1rem;
-    text-align: center;
     border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-button:hover, a.btn:hover {
-    background: #333333;
-}
-
-button:active, a.btn:active {
-    transform: scale(0.98);
-}
-
-button:disabled, a.btn.disabled {
-    opacity: 0.5;
-    pointer-events: none;
-}
-
-/* Card Styles */
-.card {
-    background: rgba(31, 31, 31, 0.9); /* Slightly transparent */
-    border: 1px solid rgba(80, 80, 80, 0.5);
-    border-radius: 12px;
-    padding: 20px;
-    margin: 1rem auto;
-    max-width: 600px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-/* Interactive Animations */
-.hover-lift {
-    display: inline-block;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.hover-lift:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
-}
-
-.page-transition {
-    animation: fadeIn 0.5s ease-out;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Custom Scrollbar */
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background: #0a0a0a;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #1f1f1f;
-    border-radius: 5px;
-    border: 2px solid #0a0a0a;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #333333;
-}
-
-/* Smooth Scrolling */
-html {
-    scroll-behavior: smooth;
+    height: 1px;
+    background-color: #ddd;
+    margin: 20px 0;
 }
